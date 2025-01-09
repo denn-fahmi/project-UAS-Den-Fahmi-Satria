@@ -7,8 +7,7 @@ Mata Kuliah: Bahasa Pemograman <p>
 ## Program Input buku, Code Dan Penjelasan
 ### 1. kelas Data <p>
 Kelas ini bertanggung jawab untuk menyimpan dan mengelola data buku. <p>
-``` Kode:
-python
+```
  class Data:
     def _init_(self):
         self.books = []
@@ -31,8 +30,6 @@ Penjelasan: <p>
 
 ### 2. Kelas View
 Kelas ini bertanggung jawab untuk berinteraksi dengan pengguna, menampilkan pesan dan mendapatkan input dari pengguna.
-Kode:
-python
 ``` class View:
     def display_books(self, books):
         if not books:
@@ -57,9 +54,6 @@ Penjelasan:
 
 ### 3. Kelas Process
 Kelas ini bertanggung jawab untuk menangani logika program dan mengoordinasikan interaksi antara layer Data dan View.
-
-Kode:
-python
 ``` class Process:
     def _init_(self):
         self.data = Data()
@@ -118,9 +112,6 @@ Penjelasan:
 
 ### 4. Kelas Main
 Kelas ini bertanggung jawab untuk menjalankan program dan mengoordinasikan keseluruhan alur kerja aplikasi dengan menginisialisasi kelas Process dan memanggil metode run untuk memulai aplikasi.
-
-Kode:
-python
 ``` from process import Process
 
 if _name_ == "_main_":
