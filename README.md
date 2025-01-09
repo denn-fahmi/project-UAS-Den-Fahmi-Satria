@@ -5,7 +5,7 @@ kelas: TI.24.A5 <p>
 Mata Kuliah: Bahasa Pemograman <p>
 
 ## Program Input buku, Code Dan Penjelasan
-1. kelas Data <p>
+### 1. kelas Data <p>
 Kelas ini bertanggung jawab untuk menyimpan dan mengelola data buku. <p>
 ``` Kode:
 python
@@ -21,14 +21,15 @@ python
             self.books.remove(title)
 
     def get_books(self):
-        return self.books ```
+        return self.books
+```
 Penjelasan: <p>
 - _init_: Metode ini membuat daftar kosong untuk menyimpan buku.
 - add_book: Menambahkan buku ke daftar.
 - remove_book: Menghapus buku dari daftar jika ada dalam daftar.
 - get_books: Mengembalikan daftar buku.
 
-2. Kelas View
+### 2. Kelas View
 Kelas ini bertanggung jawab untuk berinteraksi dengan pengguna, menampilkan pesan dan mendapatkan input dari pengguna.
 Kode:
 python
@@ -45,7 +46,8 @@ python
         return input("Masukkan judul buku: ")
 
     def show_message(self, message):
-        print(message) ```
+        print(message)
+```
 Penjelasan:
 - display_books: Menampilkan daftar buku.
 
@@ -53,8 +55,8 @@ Penjelasan:
 
 - show_message: Menampilkan pesan kepada pengguna.
 
-3. Layer Process
-Layer ini bertanggung jawab untuk menangani logika program dan mengoordinasikan interaksi antara layer Data dan View.
+### 3. Kelas Process
+Kelas ini bertanggung jawab untuk menangani logika program dan mengoordinasikan interaksi antara layer Data dan View.
 
 Kode:
 python
@@ -101,7 +103,8 @@ python
                 print("Keluar dari program.")
                 break
             else:
-                print("Opsi tidak valid. Silakan coba lagi.") ```
+                print("Opsi tidak valid. Silakan coba lagi.")
+```
 Penjelasan:
 - _init_: Menginisialisasi objek Data dan View.
 
@@ -113,7 +116,7 @@ Penjelasan:
 
 - run: Menyediakan antarmuka menu utama yang memungkinkan pengguna untuk memilih opsi untuk menambah, menghapus, menampilkan daftar buku, atau keluar dari program.
 
-4. Kelas Main
+### 4. Kelas Main
 Kelas ini bertanggung jawab untuk menjalankan program dan mengoordinasikan keseluruhan alur kerja aplikasi dengan menginisialisasi kelas Process dan memanggil metode run untuk memulai aplikasi.
 
 Kode:
@@ -122,7 +125,8 @@ python
 
 if _name_ == "_main_":
     app = Process()
-    app.run() ```
+    app.run()
+```
 Penjelasan:
 - from process import Process: Mengimpor kelas Process dari modul process.
 
@@ -131,7 +135,6 @@ Penjelasan:
 - app = Process(): Membuat instance dari kelas Process.
 
 - app.run(): Memanggil metode run pada instance Process untuk memulai aplikasi. Metode run akan menampilkan menu utama dan menangani logika aplikasi berdasarkan pilihan pengguna.
-
 
 ### Berikut adalah Link Youtube Mengenai Pembuatan dan Eksekusi Program 
 https://www.youtube.com/watch?v=VcsnOlX2v80
