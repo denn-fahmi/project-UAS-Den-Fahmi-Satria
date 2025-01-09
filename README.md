@@ -5,12 +5,11 @@ kelas: TI.24.A5 <p>
 Mata Kuliah: Bahasa Pemograman <p>
 
 ## Program Input buku, Code Dan Penjelasan
-
-``` 1. kelas Data <p>
+1. kelas Data <p>
 Kelas ini bertanggung jawab untuk menyimpan dan mengelola data buku.
 Kode:
 python
-class Data:
+``` class Data:
     def _init_(self):
         self.books = []
 
