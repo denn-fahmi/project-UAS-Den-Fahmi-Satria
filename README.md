@@ -6,7 +6,7 @@ Mata Kuliah: Bahasa Pemograman <p>
 
 ## Program Input buku, Code Dan Penjelasan
 1. kelas Data <p>
-Kelas ini bertanggung jawab untuk menyimpan dan mengelola data buku.
+Kelas ini bertanggung jawab untuk menyimpan dan mengelola data buku. <p>
 Kode:
 python
 ``` class Data:
